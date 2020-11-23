@@ -8,7 +8,7 @@ public class QuickSort {
             System.out.println("第"+ i + "个数字为 ："+ arr[i]);
         }
     }
-    public void Quick_Sort(int arr[], int left, int right){
+    /*public void Quick_Sort(int arr[], int left, int right){
         int l = left;
         int r = right;
         if(left > right){
@@ -36,5 +36,17 @@ public class QuickSort {
         Quick_Sort(arr, left,r - 1);
         //递归调用右半数组
         Quick_Sort(arr,l + 1, right);
+    }*/
+
+    public void Quick_Sort(int arr[], int left, int right){
+        int l = left;
+        int r = right;
+        int temp = arr[left];
+        if(left > right){
+            return;
+        }
+        while(l < r && arr[l] > temp){
+            l++;
+        }
     }
 }
