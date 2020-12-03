@@ -1,4 +1,4 @@
-package Instance;
+package instance;
 
 /**
  * 简单实用，推荐实用！饿汉式
